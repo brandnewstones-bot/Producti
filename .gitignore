@@ -1,0 +1,4 @@
+node_modules/
+.env
+/uploads/*
+# if you *do* want uploads in git, remove the uploads line above
