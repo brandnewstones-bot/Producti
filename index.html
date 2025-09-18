@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Producti — Uploads</title>
+<style>
+:root{font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+body{margin:0;padding:2rem;background:#f3f4f6;color:#111}
+.container{max-width:900px;margin:0 auto}
+h1{text-align:center}
+#uploadArea{border:2px dashed #cbd5e1;border-radius:10px;padding:2rem;text-align:center;background:#fff;cursor:pointer}
+#uploadArea.dragover{background:#eff6ff;border-color:#60a5fa}
+#imageSpace{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:16px}
+.thumb{border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.12)}
+.thumb img{display:block;width:100%;height:150px;object-fit:cover}
+.meta{padding:8px;font-size:12px;color:#374151}
+#status{margin-top:12px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Producti — Persistent Image Upload</h1>
+
+
+<div id="uploadArea">
+<p>Drag & drop images here, or click to choose<br><small>(Supported: JPEG, PNG, GIF. Max 10MB)</small></p>
+<input id="imageInput" type="file" accept="image/*" style="display:none">
+</div>
+
+
+<div id="status"></div>
+</html>
